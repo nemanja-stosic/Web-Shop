@@ -1,0 +1,172 @@
+html, body {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    margin: 0;
+    height: 100%;
+
+    background-image: url("image.jpg");
+}
+
+#header h1 {
+    text-align: center;
+}
+
+
+#navigation {
+    height: 50px;
+    background: rgba(119, 119, 119, 0.7);
+}
+
+#navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navigation a {
+    padding: 10px;
+    height: 30px;
+    display: block;
+}
+
+#navigation a:hover {
+    background: #536DFE;
+    color: #FFFFFF;
+}
+#navigation a:visited {
+    background: #FFCCBC;
+}
+
+#wrapper {
+    display: flex;
+    background: rgba(119, 119, 119, 0.7);
+}
+
+#headerWrapper {
+    display: flex;
+    background: rgba(124, 123, 36, 0.938);
+}
+
+#updateProductDiv h1 {
+    margin-left: 190px;
+}
+
+#deleteProductDiv h1 {
+    margin-left: 160px;
+}
+
+#addProduct {
+    clear:both;
+    padding: 5px;
+}
+
+#addProduct label {
+    text-align: left;
+    width: 220px;
+    float: left;
+}
+
+#addProduct input[type=submit] {
+    width: 150px;
+    height: 30px;
+    margin: 10px 0px 0px 130px;
+}
+
+#updateProduct {
+    clear:both;
+    padding: 5px;
+}
+
+#updateProduct label {
+    text-align: left;
+    width: 220px;
+    float: left;
+}
+
+#updateProduct input[type=submit] {
+    width: 150px;
+    height: 30px;
+    margin: 10px 0px 0px 130px;
+}
+
+#deleteProduct {
+    clear:both;
+    padding: 5px;
+}
+
+#deleteProduct label {
+    text-align: center;
+    width: 220px;
+    float: left;
+}
+
+#deleteProduct input[type=submit] {
+    width: 150px;
+    height: 30px;
+    margin: 10px 0px 0px 80px;
+}
+
+.productID {
+    width: 50px;
+}
+
+#deleteBuyerDiv {
+    margin-left: 110px;
+}
+
+a {
+    color: yellow;
+}
+
+#header {
+    text-align: center;
+    font-size: 38pt;
+    width: 100%;
+    height: 80px;
+    background: #3df33d;
+}
+
+#header:hover {
+    background: #daff08;
+}
+
+.submitLink {
+    background: none;
+    border: none;
+    color: #daff08;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18pt;
+}
+
+#buyerInfoDiv {
+    clear:both;
+    padding: 10px;
+    width: 410px;
+    float: right;
+}
+
+#buyerInfoDiv input[type=text] {
+    float: right;
+}
+
+#buyerInfoDiv label {
+    text-align: left;
+    width: 220px;
+
+}
+
+#buyerInfoDiv input[type=submit] {
+    width: 150px;
+    height: 30px;
+    margin: 10px 0px 0px 130px;
+}
+
+#orderMessageDiv {
+    text-align: center;
+    background: rgba(85, 85, 82, 0.7);
+}
