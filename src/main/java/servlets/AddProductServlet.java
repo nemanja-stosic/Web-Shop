@@ -136,58 +136,9 @@ public class AddProductServlet extends HttpServlet {
         processRequest(request, response);
     }
     
-    @Override
+      @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
 
-    private void saveImage(HttpServletResponse response, String imageName, Part imagePart) throws IOException {
-        OutputStream out = null;
-        InputStream filecontent = null;
-        PrintWriter writer = null;
-        
-        writer = response.getWriter();
-        
-        try {
-            out = new FileOutputStream(new File("C:\\WebShopResources\\" + imageName));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        
-        filecontent = imagePart.getInputStream();
-        
-        int read = 0;
-        final byte[] bytes = new byte[1024];
-        
-        while ((read = filecontent.read(bytes)) != -1) {
-            out.write(bytes, 0, read);
-        }
-        
-        if (out != null) {
-            out.close();
-        }
-        if (filecontent != null) {
-            filecontent.close();
-        }
-    }
-    
-    private void createFolder() {
-        //trying to write in C, if not allowed, then write in program files
-        try {
-            File folder = new File("C:\\WebShopResources");
-            if (!folder.exists()) {
-                folder.mkdir();
-            }
-        } catch (Exception e) {
-            try {
-                File folder = new File("C:\\Program Files\\WebShopResources");
-                if (!folder.exists()) {
-                    folder.mkdir();
-                }
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-        
-    }
 }
