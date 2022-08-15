@@ -30,7 +30,6 @@
 
         <mapping class="model.Product"/>
         <mapping class="model.Buyer"/>
-        <mapping class="model.Sale"/>
 
     </session-factory>
 </hibernate-configuration>
